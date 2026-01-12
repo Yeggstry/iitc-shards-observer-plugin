@@ -1,17 +1,19 @@
 import * as Plugin from "iitcpluginkit";
-
+import { ShardsObserverUI } from "./ShardsObserverUi";
 
 class Shards_Observer implements Plugin.Class {
+    private ui: ShardsObserverUI;
 
-    init() {
-        console.log("Shards_Observer " + VERSION);
-
-        // eslint-disable-next-line unicorn/prefer-module, @typescript-eslint/no-require-imports
-        require("./styles.css");
-
-        // FILL ME
+    constructor() {
+        this.ui = new ShardsObserverUI();
     }
 
+    init() {
+        IITC.toolbox.addButton({
+            label: "Shards Observer",
+            action: () => this.ui.show(),
+        });
+    }
 }
 
 /**
