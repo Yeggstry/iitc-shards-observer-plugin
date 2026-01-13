@@ -1,3 +1,7 @@
+#dialog-shards-observer {
+    padding: 5px;
+}
+
 #dialog-shards-observer section {
     display: flex;
     flex-direction: column;

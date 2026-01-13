@@ -6,5 +6,6 @@
     "author": "Lewis Keen",
     "entry": "src/Main.ts",
     "minimize": false,
-    "changelog": ""
+    "changelog": "",
+    "downloadURL": "https://yeggstry.github.io/iitc-shards-observer-plugin/"
 }
