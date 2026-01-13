@@ -1,4 +1,4 @@
-name: Tag Release
+name: Release Plugin
 
 on:
     push:
@@ -9,7 +9,7 @@ permissions:
     contents: read
 
 jobs:
-    tag-release:
+    release:
         runs-on: ubuntu-latest
         permissions:
             contents: write # to be able to publish a GitHub release
@@ -27,9 +27,25 @@ jobs:
 
             - run: corepack enable
             - run: yarn install --immutable
-            - run: yarn build
+            - run: yarn build:prod
 
             - name: Tag release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: yarn semantic-release
+
+            - name: Upload Pages Artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: dist
+
+    deploy_plugin_to_gh_pages:
+        needs: [release]
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
