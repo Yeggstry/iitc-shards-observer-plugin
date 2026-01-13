@@ -1,0 +1,43 @@
+{
+    "name": "iitc-shards-observer-plugin",
+    "version": "0.0.1",
+    "description": "Observes and records shard data from the Ingress Intel map",
+    "author": "Lewis Keen",
+    "license": "MIT",
+    "homepage": "https://yeggstry.github.io/iitc-shards-observer-plugin/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yeggstry/iitc-shards-observer-plugin.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yeggstry/iitc-shards-observer-plugin/issues"
+    },
+    "type": "module",
+    "scripts": {
+        "build": "yarn build:dev",
+        "build:dev": "yarn ipk build:dev",
+        "build:prod": "yarn ipk build:prod",
+        "start": "yarn ipk fileserver",
+        "autobuild": "yarn ipk autobuild"
+    },
+    "dependencies": {
+        "iitcpluginkit": "^1.9.6"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "eslint": "^9.39.2",
+        "eslint-plugin-prefer-arrow-functions": "^3.9.1",
+        "eslint-plugin-unicorn": "^62.0.0",
+        "semantic-release": "^25.0.2",
+        "typescript-eslint": "^8.52.0"
+    },
+    "release": {
+        "branches": [
+            "main",
+            "next"
+        ]
+    },
+    "npmPublish": false
+}

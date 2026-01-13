@@ -1,0 +1,11 @@
+{
+    "name": "IITC plugin: Shards Observer",
+    "id": "iitc_plugin_Shards_Observer",
+    "category": "Anomaly",
+    "description": "Observes and records shard data from the Ingress Intel map",
+    "author": "Lewis Keen",
+    "entry": "src/Main.ts",
+    "minimize": false,
+    "changelog": "",
+    "downloadURL": "https://yeggstry.github.io/iitc-shards-observer-plugin/"
+}
