@@ -1,17 +1,32 @@
 {
+    "branches": [
+        "main",
+        "next"
+    ],
     "plugins": [
         [
             "@semantic-release/commit-analyzer",
             {
                 "preset": "angular",
+                "parserOpts": {
+                    "noteKeywords": [
+                        "BREAKING CHANGE",
+                        "BREAKING CHANGES",
+                        "BREAKING"
+                    ]
+                },
                 "releaseRules": [
+                    {
+                        "type": "refactor",
+                        "release": "patch"
+                    },
                     {
                         "type": "docs",
                         "scope": "README",
                         "release": "patch"
                     },
                     {
-                        "type": "refactor",
+                        "type": "ci",
                         "release": "patch"
                     },
                     {
