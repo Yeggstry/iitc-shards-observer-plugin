@@ -75,7 +75,8 @@
                     "commitsSort": [
                         "subject",
                         "scope"
-                    ]
+                    ],
+                    "linkCompare": false
                 }
             }
         ],
@@ -88,7 +89,7 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "yarn build:prod"
+                "prepareCmd": "yarn version --non-interactive && yarn build:prod"
             }
         ],
         [
