@@ -575,7 +575,7 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@^12.0.0":
+"@semantic-release/github@^12.0.0", "@semantic-release/github@^12.0.2":
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-12.0.2.tgz#bc1f76e9cd386c5b01a20c3f0606e8eec6b1b93a"
   integrity sha512-qyqLS+aSGH1SfXIooBKjs7mvrv0deg8v+jemegfJg1kq6ji+GJV8CO08VJDEsvjp3O8XJmTTIAjjZbMzagzsdw==
@@ -598,7 +598,7 @@
     undici "^7.0.0"
     url-join "^5.0.0"
 
-"@semantic-release/npm@^13.1.1":
+"@semantic-release/npm@^13.1.1", "@semantic-release/npm@^13.1.3":
   version "13.1.3"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-13.1.3.tgz#f75bc82e005fcb859932461bfc5583746a31f6c1"
   integrity sha512-q7zreY8n9V0FIP1Cbu63D+lXtRAVAIWb30MH5U3TdrfXt6r2MIrWCY0whAImN53qNvSGp0Zt07U95K+Qp9GpEg==
@@ -1641,6 +1641,13 @@ conventional-changelog-angular@^8.0.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-8.1.0.tgz#06223a40f818c5618982fdb92d2b2aac5e24d33e"
   integrity sha512-GGf2Nipn1RUCAktxuVauVr1e3r8QrLP/B0lEUsFktmGqc3ddbQkhoJZHJctVU829U1c6mTSWftrVOCHaL85Q3w==
+  dependencies:
+    compare-func "^2.0.0"
+
+conventional-changelog-conventionalcommits@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-9.1.0.tgz#34e5f35c80c1375a5464df2a8067a1facbb2d858"
+  integrity sha512-MnbEysR8wWa8dAEvbj5xcBgJKQlX/m0lhS8DsyAAWDHdfs2faDJxTgzRYlRYpXSe7UiKrIIlB4TrBKU9q9DgkA==
   dependencies:
     compare-func "^2.0.0"
 
