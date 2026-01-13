@@ -113,8 +113,7 @@
                         "path": "dist/*.meta.js",
                         "label": "IITC Shard Observer Plugin (Meta Script)"
                     }
-                ],
-                "addReleases": "bottom"
+                ]
             }
         ]
     ]
