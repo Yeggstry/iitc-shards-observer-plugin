@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - main
+            - "feat/*"
 
 permissions:
     contents: write
@@ -12,7 +13,6 @@ permissions:
     id-token: write
     pages: write
     deployments: write
-
 
 jobs:
     release:
@@ -35,11 +35,13 @@ jobs:
               run: yarn semantic-release
 
             - name: Upload Pages Artifact
+              if: github.ref == 'refs/heads/main'
               uses: actions/upload-pages-artifact@v3
               with:
                   path: dist
 
     deploy_plugin_to_gh_pages:
+        if: github.ref == 'refs/heads/main'
         needs: [release]
         runs-on: ubuntu-latest
         environment:
