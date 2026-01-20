@@ -224,6 +224,7 @@ __metadata:
   resolution: "@ingress-shards/iitc-plugin-shards-observer@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.39.2"
+    "@ingress-shards/shards-core": "npm:^0.1.0"
     "@semantic-release/exec": "npm:^7.1.0"
     "@types/node": "npm:^25.0.9"
     concurrently: "npm:^9.2.1"
@@ -239,6 +240,15 @@ __metadata:
     webpack: "npm:^5.104.1"
   languageName: unknown
   linkType: soft
+
+"@ingress-shards/shards-core@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@ingress-shards/shards-core@npm:0.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40ingress-shards%2Fshards-core%2F0.1.0%2F7676fa0cae7fb26bf54a60e4e2126b307bb28473"
+  dependencies:
+    temporal-polyfill: "npm:^0.3.0"
+  checksum: 10c0/1d8e9bae354298ff1682a74793d3cca758de7f55fff1b1d4831a1cbd46c1ded790de54f8c3daaf0b1a7886ef57bb7bc8ef041d22e80c7960282e4c2ddc20ac15
+  languageName: node
+  linkType: hard
 
 "@isaacs/balanced-match@npm:^4.0.1":
   version: 4.0.1
@@ -7056,6 +7066,22 @@ __metadata:
   version: 3.0.0
   resolution: "temp-dir@npm:3.0.0"
   checksum: 10c0/a86978a400984cd5f315b77ebf3fe53bb58c61f192278cafcb1f3fb32d584a21dc8e08b93171d7874b7cc972234d3455c467306cc1bfc4524b622e5ad3bfd671
+  languageName: node
+  linkType: hard
+
+"temporal-polyfill@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "temporal-polyfill@npm:0.3.0"
+  dependencies:
+    temporal-spec: "npm:0.3.0"
+  checksum: 10c0/ea6a495fac64c19b194ec3536c2a5916a754c2bf7f645fac5c149fe6a43f266fe4493c6fd6a6b6dfa3e9813505bc48346cf0514c1631a401b354f4c6568b908d
+  languageName: node
+  linkType: hard
+
+"temporal-spec@npm:0.3.0":
+  version: 0.3.0
+  resolution: "temporal-spec@npm:0.3.0"
+  checksum: 10c0/2f7c8530f10e628ff755618490352f6c45b9a20833518286a3c10a8301012696fe6f0bcaa795d5f6f20038777595f2a73dc3390ddea743803405173ff233f482
   languageName: node
   linkType: hard
 
